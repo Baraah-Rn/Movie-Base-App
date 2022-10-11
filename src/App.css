@@ -2,37 +2,43 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+/* =========Card section========== */
+#card-container{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  margin:3rem;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card{
+  width: 18rem;
+  margin: 1rem;
+
+}
+.card-img{
+height: 300px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* =========Movie Detail section======== */
+.mb-3 {
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  width: 540px;
+  margin: auto;
+  margin-top:13rem;
+  width: 60%;
+  padding: 10px;
+}
+.det-img{
+  height: 550px;
+  width: 500px;
+}
+.accordion-body{
+  line-height: 25px;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
+
+
