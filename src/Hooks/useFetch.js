@@ -2,35 +2,31 @@ import { useState, useEffect } from 'react'
 
 const useFetch = (url) => {
   const [data, setData] = useState([])
-  const [isLoading, setIsLoading] = useState(true)
   const [error, setError] = useState(null)
-   
-  useEffect(() => {
-      fetch(url)
-        .then(res => {
-          if (!res.ok) {
-            throw Error("could not fetch the data")
-          }
-          return res.json()
-        })
-        .then(data => {
-          setData(data)
-          setIsLoading(false)
-          setError(null)
-        })
-        .catch(err => {
-          setIsLoading(false)
-         setError(err.message)
 
-        })
+  useEffect(() => {
+    fetch(url)
+      .then(res => {
+        if (!res.ok) {
+          throw Error("could not fetch the data")
+        }
+        return res.json()
+      })
+      .then(data => {
+        setData(data)
+        setError(null)
+      })
+      .catch(err => {
+        setError(err.message)
+        
+
+      })
   }, [url])
 
-  return{
+  return {
     data,
-    isLoading,
     error
   }
- 
 }
 
 export default useFetch

@@ -9,8 +9,8 @@ const FavoriteProducts = () => {
   const { favorites } = useContext(FavoritesContext);
   return (
     <div>
-      <NavBar title={"My Favorites page"}/>
-      
+      <NavBar title={"My Favorites page"} />
+
       <div className='card-container'>
         {favorites.length > 0 ? (
           favorites.map((movie) => (

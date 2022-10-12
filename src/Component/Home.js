@@ -1,7 +1,7 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Form from './UserComponents/Form'
-import MainPage from "./MainPage"
+import MainPage from "../Component/MoviesComponents/MainPage"
 import MovieDetails from '../Component/MoviesComponents/MovieDetails'
 import Favorites from "../Component/FavoritesComponents/Favorites"
 

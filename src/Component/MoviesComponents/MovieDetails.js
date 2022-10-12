@@ -1,20 +1,20 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { useParams } from "react-router-dom";
 import useFetch from '../../Hooks/useFetch';
 import FavoritesIcon from '../FavoritesComponents/FavoritesIcon';
 import Header from '../NavBar';
+
 const MovieDetails = () => {
     const { id } = useParams();
 
     const detailUrl = `http://www.omdbapi.com/?i=${id}&apikey=351c64c2`
-    const { data: movie, isLoading, error } = useFetch(detailUrl);
+    const { data: movie, error } = useFetch(detailUrl);
 
 
     return (
         <>
-            {isLoading && <div> Loading...</div>}
             {error && <div>{error}</div>}
-            <Header/>
+            <Header />
             {movie && <div className="card mb-3">
                 <div className="row g-0">
                     <div className="col-md-4">
@@ -23,7 +23,7 @@ const MovieDetails = () => {
                     <div className="col-md-8">
                         <div className="card-body">
                             <h5 className="card-title">{movie.Title}({movie.Year})</h5>
-                            <FavoritesIcon movie={movie}/>
+                            <FavoritesIcon movie={movie} />
                             <p className="card-text"><small className="text-muted">{movie.Genre}</small></p>
                             <p className="card-text">{movie.Plot}</p>
                             <p className="card-text"><small className="text-muted">Released at : {movie.Released}, Runtime: {movie.Runtime}</small></p>

@@ -3,7 +3,7 @@ import { createContext, useState } from "react";
 
 export const FavoritesContext = createContext();
 
-export const FavoritesProvider = ({children})=> {
+export const FavoritesProvider = ({ children }) => {
   const [favorites, setFavorites] = useState([]);
 
   const deleteFav = (id) => {
@@ -15,8 +15,7 @@ export const FavoritesProvider = ({children})=> {
 
   return (
     <FavoritesContext.Provider
-      value={{ favorites, deleteFav, addFav}}
-    >
+      value={{ favorites, deleteFav, addFav }}>
       {children}
     </FavoritesContext.Provider>
   );

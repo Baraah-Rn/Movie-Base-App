@@ -1,62 +1,24 @@
 .App {
   text-align: center;
 }
-/* ========Search section */
-.search-form{
-  display: flex;
- margin: auto;
-}
-.search-input{
-  border-bottom-right-radius: 0px;
-  border-top-right-radius: 0px;
-  margin-bottom: 1.7rem;
-  height: 55px;
 
+/* =========Navbar section======= */
+.page-title {
+  color: rgb(14, 14, 14);
+  margin-left: 3rem;
 }
 
-.selection-container{
-  margin-left: 0.3rem;
-  border-bottom-right-radius: 12px;
-  border-top-right-radius: 12px;
-  height: 55px;
-}
-.year-container{
-  height: 55px;
-  width: fit-content;
-  margin-left: 0.4rem;
-}
-
-
-/* =========Card section========== */
-.card-container{
-  display: grid;
-  grid-template-columns: auto  auto auto auto;
-  margin-left:2rem;
-}
-
-
-.card{
-  width: 18rem;
-  margin: 1rem;
-  background-color: rgba(240, 239, 239, 0.93);
-}
-
-.card-img{
-height: 300px;
-}
-
-
-/* =========Navbar======= */
-.nav-container{
+.nav-container {
   height: 5.4rem;
-   background: linear-gradient(90deg,
-            rgba(253, 253, 253, 0.782) 0%,
-            rgba(164, 110, 162, 0.981) 100%);
+  background: linear-gradient(90deg,
+      rgba(253, 253, 253, 0.782) 0%,
+      rgba(164, 110, 162, 0.981) 100%);
   padding: 1.6rem;
   margin-bottom: 2rem;
-  
+
 }
-.nav-link-container{
+
+.nav-link-container {
   display: flex;
   flex-direction: row;
   gap: 30px;
@@ -64,66 +26,107 @@ height: 300px;
   margin-top: -2.7rem;
   float: right;
 }
-.nav-link{
+
+.nav-link {
   color: rgb(5, 5, 5);
   text-decoration: none;
-   font-size: 22px; 
+  font-size: 22px;
 }
 
-/* =========Movie Detail section======== */
-.card-title{
-  color: rgb(75, 12, 133);
-}
-.mb-3 {
-  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
-  width:440px;
+/* ========Search section========= */
+.search-form {
+  display: flex;
   margin: auto;
-  margin-top:2.4rem;
-  width: 55%;
-  padding: 9px;
-}
-.det-img{
-  height: 550px;
-  width: 500px;
-}
-.accordion-body{
-  line-height: 25px;
 }
 
-/* =========Favorites section */
+.search-input {
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+  margin-bottom: 1.7rem;
+  height: 55px;
 
-.heart-icon{
+}
+
+.selection-container {
+  margin-left: 0.3rem;
+  border-bottom-right-radius: 12px;
+  border-top-right-radius: 12px;
+  height: 55px;
+}
+
+.year-container {
+  height: 55px;
+  width: fit-content;
+  margin-left: 0.4rem;
+}
+
+.heart-icon {
   width: 30px;
   margin-left: auto;
   margin-top: -1.6rem;
 }
-.fav-list{
-  list-style-type:none;
+
+/* =========Card section========== */
+.card-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  margin-left: 2rem;
 }
 
+.card {
+  width: 18rem;
+  margin: 1rem;
+  background-color: rgba(240, 239, 239, 0.93);
+}
 
-.page-title{
-  color: rgb(14, 14, 14);
-  margin-left: 3rem;
+.card-img {
+  height: 300px;
 }
-.non-fav{
-  color:snow;
- border: solid 9px  ;
- padding: 2rem;
- margin: 15rem;
-  text-align: center;
-}
- .movie-link:hover{
+
+.movie-link:hover {
   color: rgb(0, 0, 0);
 }
-.movie-link{
+
+.movie-link {
   color: rgb(75, 12, 133);
-}.link{
+}
+
+.link {
   text-decoration: none;
 }
 
-.logo{
-  height: 70px;
-  width: 70px;
-  border-radius: 25%;
+/* =========Movie Detail section======== */
+.card-title {
+  color: rgb(75, 12, 133);
+}
+
+.mb-3 {
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+  width: 440px;
+  margin: auto;
+  margin-top: 2.4rem;
+  width: 55%;
+  padding: 9px;
+}
+
+.det-img {
+  height: 550px;
+  width: 500px;
+}
+
+.accordion-body {
+  line-height: 25px;
+}
+
+/* =========Favorites section */
+.fav-list {
+  list-style-type: none;
+}
+
+.non-fav {
+  color: snow;
+  border: solid 9px;
+  padding: 2rem;
+  margin: 15rem;
+  text-align: center;
 }
