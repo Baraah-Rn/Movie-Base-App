@@ -7,7 +7,7 @@ import Header from '../NavBar';
 const MovieDetails = () => {
     const { id } = useParams();
 
-    const detailUrl = `http://www.omdbapi.com/?i=${id}&apikey=351c64c2`
+    const detailUrl = `https://www.omdbapi.com/?i=${id}&apikey=351c64c2`
     const { data: movie, error } = useFetch(detailUrl);
 
 
