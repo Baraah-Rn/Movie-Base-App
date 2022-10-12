@@ -1,6 +1,6 @@
 
 
-#Movie Base App
+### `Movie Base App`
 
 This is a movies application was build with **React and UI**
 Bootstarab has been used with the style 
