@@ -16,7 +16,6 @@ const MovieDetails = () => {
             {error && <div>{error}</div>}
             <Header/>
             {movie && <div className="card mb-3">
-
                 <div className="row g-0">
                     <div className="col-md-4">
                         <img src={movie.Poster} className="img-fluid rounded-start det-img" alt={movie.Title} />
@@ -24,12 +23,7 @@ const MovieDetails = () => {
                     <div className="col-md-8">
                         <div className="card-body">
                             <h5 className="card-title">{movie.Title}({movie.Year})</h5>
-
-                            
                             <FavoritesIcon movie={movie}/>
-
-
-
                             <p className="card-text"><small className="text-muted">{movie.Genre}</small></p>
                             <p className="card-text">{movie.Plot}</p>
                             <p className="card-text"><small className="text-muted">Released at : {movie.Released}, Runtime: {movie.Runtime}</small></p>
@@ -44,12 +38,12 @@ const MovieDetails = () => {
                                     <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                                         <div className="accordion-body">
                                             <h5>Awards</h5>
-                                            <p className="card-title">{movie.Awards}</p>
+                                            <p className="card-title2">{movie.Awards}</p>
 
 
                                             <hr />
-                                            <strong>Language: {movie.Language}</strong><br />
-                                            <strong> Countries: {movie.Country}</strong><hr />
+                                            <strong>Language: </strong>{movie.Language}<br />
+                                            <strong> Countries: </strong>{movie.Country}<hr />
                                             <p>Director: {movie.Director}</p>
                                             <p>Writer: {movie.Writer}</p>
                                             <p>Actors: {movie.Actors}</p>

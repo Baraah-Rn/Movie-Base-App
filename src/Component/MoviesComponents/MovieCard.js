@@ -10,7 +10,8 @@ const MovieCard = ({ movie }) => {
       <img className="card-img-top card-img" src={movie.Poster} alt={movie.Title} />
       <div className="card-body">
         <Link to={`/movie/${movie.imdbID}`} className="link">
-          <h5 className="card-text">{movie.Title}</h5>
+         <p className="movie-link"> <strong>{movie.Title}</strong></p><hr className="movie-link"></hr>
+         <span className="movie-link link"> Type: {(movie.Type)}</span>
         </Link>
         <FavoritesIcon movie={movie} />
       </div>

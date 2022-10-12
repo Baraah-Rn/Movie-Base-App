@@ -22,6 +22,7 @@
 }
 .year-container{
   height: 55px;
+  width: fit-content;
   margin-left: 0.4rem;
 }
 
@@ -29,55 +30,57 @@
 /* =========Card section========== */
 .card-container{
   display: grid;
-  grid-template-columns: auto auto auto auto auto;
+  grid-template-columns: auto  auto auto auto;
   margin-left:2rem;
 }
+
 
 .card{
   width: 18rem;
   margin: 1rem;
-  background-color: rgba(220, 215, 215, 0.93);
+  background-color: rgba(240, 239, 239, 0.93);
 }
 
 .card-img{
 height: 300px;
 }
 
-.link{
-  text-decoration: none;
-   font-size: 20px;
-  color: rgb(75, 12, 133);
 
-}
 /* =========Navbar======= */
 .nav-container{
-  height: 6rem;
-  background-color: cadetblue;
+  height: 5.4rem;
+   background: linear-gradient(90deg,
+            rgba(253, 253, 253, 0.782) 0%,
+            rgba(164, 110, 162, 0.981) 100%);
   padding: 1.6rem;
   margin-bottom: 2rem;
+  
 }
 .nav-link-container{
   display: flex;
   flex-direction: row;
   gap: 30px;
-  float: right;
   margin-right: 3rem;
+  margin-top: -2.7rem;
+  float: right;
 }
 .nav-link{
-  color: antiquewhite;
+  color: rgb(5, 5, 5);
   text-decoration: none;
-   font-size: 23px;
+   font-size: 22px; 
 }
 
-
 /* =========Movie Detail section======== */
+.card-title{
+  color: rgb(75, 12, 133);
+}
 .mb-3 {
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
-  width: 540px;
+  width:440px;
   margin: auto;
-  margin-top:10rem;
-  width: 60%;
-  padding: 10px;
+  margin-top:2.4rem;
+  width: 55%;
+  padding: 9px;
 }
 .det-img{
   height: 550px;
@@ -100,6 +103,27 @@ height: 300px;
 
 
 .page-title{
-  color: antiquewhite;
+  color: rgb(14, 14, 14);
   margin-left: 3rem;
+}
+.non-fav{
+  color:snow;
+ border: solid 9px  ;
+ padding: 2rem;
+ margin: 15rem;
+  text-align: center;
+}
+ .movie-link:hover{
+  color: rgb(0, 0, 0);
+}
+.movie-link{
+  color: rgb(75, 12, 133);
+}.link{
+  text-decoration: none;
+}
+
+.logo{
+  height: 70px;
+  width: 70px;
+  border-radius: 25%;
 }

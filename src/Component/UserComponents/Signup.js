@@ -3,16 +3,19 @@ import useForm from "../../Hooks/useForm"
 import FormHandleError from './FormHandleError';
 import "./Form.css"
 
+
+
 const Signup = ({submitForm}) => {
   const { handleChange, values, handleSubmit, errors } = useForm(FormHandleError,submitForm);
 
 
 
   return (
+    <>
     <div  className='form-container'>
     <form className='form' onSubmit={handleSubmit} >
-      <h2>Get started! Create your account by filling out the information below.</h2>
-
+      <h2>Unlimited movies, TV shows and more.</h2>
+    
       <div className='form-inputs'>
         <label className='form-label' for="username">Username : </label>
         <input className='form-input' type="username"
@@ -58,8 +61,11 @@ const Signup = ({submitForm}) => {
      </div>
 
       <button type='submit' className='Form-btn'>Signup</button>
+      <span>Ready to watch?Create your account</span>
       </form>
+      
       </div>
+      </>
   )
 }
 

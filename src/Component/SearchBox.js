@@ -20,7 +20,7 @@ const SearchBox = ({ handleSubmit, searchValue, setSearchValue, typeValue, setTy
           onChange={e => { setYear(e.target.value) }}
           className=' year-container col-sm-2'>
           {yearRange.map((year) =>
-            <option>{year + 1980}</option>
+            <option>Since: {year + 1980}</option>
           )}
         </select>
 
