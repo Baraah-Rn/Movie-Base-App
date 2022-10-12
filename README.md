@@ -2,6 +2,7 @@
 #Movie Base App
 
 This is a movies application was build with **React and UI**
+Bootstarab has been used with the style 
 
 **Application Description**
 >First the user has to sign up before going to the Main page.
@@ -12,12 +13,7 @@ This is a movies application was build with **React and UI**
 >Every result in the Application contain a link and it show more details about it 
 
 ![Log](https://user-images.githubusercontent.com/101180840/195444073-b32e660c-a9ec-4dbf-93b0-3e5270a2276b.PNG)
-
-
-
-
-
-
+![home](https://user-images.githubusercontent.com/101180840/195444235-02dd60aa-3243-4dab-9986-8e6640b3d1de.PNG)
 
 
 
