@@ -3,18 +3,21 @@
 }
 /* ========Search section */
 .search-input{
+  margin-bottom: 1.7rem;
   margin-left: 550px;
   height: 55px;
 }
 
+.selection-container{
+  float: right;
+  height: 55px;
+}
+
 /* =========Card section========== */
-#card-container{
+.card-container{
   display: grid;
-  grid-template-columns: auto auto auto auto;
-  margin:2rem;
-  margin-right: -2rem;
-
-
+  grid-template-columns: auto auto auto auto auto;
+  margin-left:2rem;
 }
 
 .card{
@@ -33,13 +36,33 @@ height: 300px;
   color: rgb(75, 12, 133);
 
 }
+/* =========Navbar======= */
+.nav-container{
+  height: 6rem;
+  background-color: cadetblue;
+  padding: 1.6rem;
+  margin-bottom: 2rem;
+}
+.nav-link-container{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  float: right;
+  margin-right: 3rem;
+}
+.nav-link{
+  color: antiquewhite;
+  text-decoration: none;
+   font-size: 23px;
+}
+
 
 /* =========Movie Detail section======== */
 .mb-3 {
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
   width: 540px;
   margin: auto;
-  margin-top:13rem;
+  margin-top:10rem;
   width: 60%;
   padding: 10px;
 }
@@ -58,26 +81,12 @@ height: 300px;
   margin-left: auto;
   margin-top: -1.6rem;
 }
-.header{
-  list-style-type:none;
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-}
-.header-title{
-  font-size: 24px;
-  color: antiquewhite;
-}
-.header-link{
-  color: antiquewhite;
-  text-decoration: none;
-   font-size: 23px;
-}
-.header-link :hover{
-font-size: 40px;
-}
 .fav-list{
   list-style-type:none;
 }
 
 
+.page-title{
+  color: antiquewhite;
+  margin-left: 3rem;
+}

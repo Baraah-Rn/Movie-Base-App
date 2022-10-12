@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useParams } from "react-router-dom";
 import useFetch from '../../Hooks/useFetch';
 import FavoritesIcon from '../FavoritesComponents/FavoritesIcon';
-
+import Header from '../NavBar';
 const MovieDetails = () => {
     const { id } = useParams();
 
@@ -14,6 +14,7 @@ const MovieDetails = () => {
         <>
             {isLoading && <div> Loading...</div>}
             {error && <div>{error}</div>}
+            <Header/>
             {movie && <div className="card mb-3">
 
                 <div className="row g-0">
