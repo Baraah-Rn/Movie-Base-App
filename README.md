@@ -1,70 +1,54 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#Movie Base App
 
-## Available Scripts
+This is a movies application was build with **React and UI**
 
-In the project directory, you can run:
+**Application Description**
+>First the user has to sign up before going to the Main page.
+>The user can use **filters** to choose between Movies and Series or both.
+>There is Another filter section (Search by year).
+>The Application provide also a **Search bar** to allow the user to search by name.
+>The Application contain a **Favorite** feature so the use can add/remove  Movie/series to his/her list
+>Every result in the Application contain a link and it show more details about it 
+
+**Available Scripts**
+### `npm i `
+>Make sure to install all packages before start 
 
 ### `npm start`
+>Runs the app in the development mode.\
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**Structure**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+├── src
+    ├── Components                   
+    │   ├──FavoritesComponents                  #Control the favoriet featcure
+    │   │                    │──Favorites
+    │   │                    │──FavoritesIcon 
+    │   │                  
+    │   ├──MoviesComponents
+    │   │                  │──MainPage        #contain all api and featch to get result
+    │   │                  │── MovieCard      #The structure of every Rsult
+    │   │                  │──MovieDetails    #The Detailse page and the Extra information 
+    │   │                  │──MoviesList      #The List of All results
+    │   │     
+    │   ├──UserComponents
+    │   │                │──Form                 #Handelling seccses submite form 
+    │   │                │──FormHandleError      #Handelling Signup Error 
+    │   │                │──Signup               #structure of sign up form 
+    │   │                │──Form                 #Adding style to the sign up form
+    │   │ 
+    │   │──Home                                   #Containes All Routes
+    │   │──NavBar                                 
+    │   │──SearchBox
+    │   │
+    └── Context
+    │          │── FavoritesContext              #Add Remove Functions from favorites         
+    │
+    └──Hooks
+    │       │──useFetch                          #Custom Hook to featch Api and Error 
+    │       │──useForm                           #Custom Hook to Control Signup form
+    │
+    └──img 
+    │
+    └──App.css                                     #Adding style to the Application
