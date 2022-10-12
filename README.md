@@ -5,6 +5,9 @@
 This is a movies application was build with **React and UI**
 Bootstarab has been used with the style 
 
+**To see the application live click on**
+https://bespoke-crostata-be217f.netlify.app/
+
 **Application Description**
 >First the user has to sign up before going to the Main page.
 >The user can use **filters** to choose between Movies and Series or both.
@@ -19,10 +22,12 @@ Bootstarab has been used with the style
 
 
 **Available Scripts**
+>Make sure you have Nodejs downloaded 
 ### `npm i `
 >Make sure to install all packages before start 
 
 ### `npm start`
 >Runs the app in the development mode.
+
 
  
