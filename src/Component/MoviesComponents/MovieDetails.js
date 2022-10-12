@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useParams } from "react-router-dom";
-import useFetch from '../Hooks/useFetch';
+import useFetch from '../../Hooks/useFetch';
+import FavoritesIcon from '../FavoritesComponents/FavoritesIcon';
 
 const MovieDetails = () => {
     const { id } = useParams();
@@ -22,6 +23,12 @@ const MovieDetails = () => {
                     <div className="col-md-8">
                         <div className="card-body">
                             <h5 className="card-title">{movie.Title}({movie.Year})</h5>
+
+                            
+                            <FavoritesIcon movie={movie}/>
+
+
+
                             <p className="card-text"><small className="text-muted">{movie.Genre}</small></p>
                             <p className="card-text">{movie.Plot}</p>
                             <p className="card-text"><small className="text-muted">Released at : {movie.Released}, Runtime: {movie.Runtime}</small></p>

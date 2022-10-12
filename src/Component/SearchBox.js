@@ -4,8 +4,8 @@ const SearchBox = ({ handleSubmit,searchValue,setSearchValue }) => {
 
   return (
     <form onSubmit={handleSubmit}
-      className='col col-sm-4'>
-      <input className='form-control'
+      className=' col-sm-4'>
+      <input className='form-control search-input'
         placeholder='Type to search'
         value={searchValue}
         onChange={e => {setSearchValue(e.target.value)

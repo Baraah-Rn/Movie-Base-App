@@ -1,23 +1,37 @@
 .App {
   text-align: center;
 }
-
+/* ========Search section */
+.search-input{
+  margin-left: 550px;
+  height: 55px;
+}
 
 /* =========Card section========== */
 #card-container{
   display: grid;
   grid-template-columns: auto auto auto auto;
-  margin:3rem;
+  margin:2rem;
+  margin-right: -2rem;
+
 
 }
 
 .card{
   width: 18rem;
   margin: 1rem;
-
+  background-color: rgba(220, 215, 215, 0.93);
 }
+
 .card-img{
 height: 300px;
+}
+
+.link{
+  text-decoration: none;
+   font-size: 20px;
+  color: rgb(75, 12, 133);
+
 }
 
 /* =========Movie Detail section======== */
@@ -37,8 +51,33 @@ height: 300px;
   line-height: 25px;
 }
 
+/* =========Favorites section */
 
-
-
+.heart-icon{
+  width: 30px;
+  margin-left: auto;
+  margin-top: -1.6rem;
+}
+.header{
+  list-style-type:none;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.header-title{
+  font-size: 24px;
+  color: antiquewhite;
+}
+.header-link{
+  color: antiquewhite;
+  text-decoration: none;
+   font-size: 23px;
+}
+.header-link :hover{
+font-size: 40px;
+}
+.fav-list{
+  list-style-type:none;
+}
 
 
