@@ -11,7 +11,7 @@ This is a movies application was build with **React and UI**
 >The Application contain a **Favorite** feature so the use can add/remove  Movie/series to his/her list
 >Every result in the Application contain a link and it show more details about it 
 
-
+![Log](https://user-images.githubusercontent.com/101180840/195444073-b32e660c-a9ec-4dbf-93b0-3e5270a2276b.PNG)
 
 
 
