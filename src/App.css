@@ -2,16 +2,29 @@
   text-align: center;
 }
 /* ========Search section */
+.search-form{
+  display: flex;
+ margin: auto;
+}
 .search-input{
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
   margin-bottom: 1.7rem;
-  margin-left: 550px;
   height: 55px;
+
 }
 
 .selection-container{
-  float: right;
+  margin-left: 0.3rem;
+  border-bottom-right-radius: 12px;
+  border-top-right-radius: 12px;
   height: 55px;
 }
+.year-container{
+  height: 55px;
+  margin-left: 0.4rem;
+}
+
 
 /* =========Card section========== */
 .card-container{

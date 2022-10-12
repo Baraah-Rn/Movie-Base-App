@@ -6,8 +6,8 @@ const MoviesList = ({movies}) => {
   return (
      <div className='card-container'>
        {movies.Search.map((movie) =>
-         <div className="card">
-          <MovieCard movie={movie} key={movie.imdbID} />
+         <div key={movie.imdbID} className="card">
+          <MovieCard movie={movie}  />
          </div>
         )} 
    
