@@ -10,13 +10,13 @@ const MainPage = () => {
   const [year, setYear] = useState('')
 
 
-  let baseUrl = `http://www.omdbapi.com/?s=life&apikey=351c64c2`
+  let baseUrl = `https://www.omdbapi.com/?s=life&apikey=351c64c2`
   if (searchValue && typeValue !== "All" && year !== null) {
-    baseUrl = `http://www.omdbapi.com/?s=${searchValue}&type=${typeValue}&y=${year.slice(7, 11)}&apikey=351c64c2`
+    baseUrl = `https://www.omdbapi.com/?s=${searchValue}&type=${typeValue}&y=${year.slice(7, 11)}&apikey=351c64c2`
   } else if (searchValue && typeValue !== "All") {
-    baseUrl = `http://www.omdbapi.com/?s=${searchValue}&type=${typeValue}&apikey=351c64c2`
+    baseUrl = `https://www.omdbapi.com/?s=${searchValue}&type=${typeValue}&apikey=351c64c2`
   } else if (searchValue && year !== null) {
-    baseUrl = `http://www.omdbapi.com/?s=${searchValue}&y=${year.slice(7, 11)}&apikey=351c64c2`
+    baseUrl = `https://www.omdbapi.com/?s=${searchValue}&y=${year.slice(7, 11)}&apikey=351c64c2`
   }
 
   const { data: movies, error } = useFetch(baseUrl);
